@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy policy · Crumb</title>
+<meta name="description" content="What Crumb handles, where it goes, and the choices you have.">
+<link rel="icon" href="img/logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="img/logo.svg" alt="">Crumb</a>
+    <nav><a href="./#features">Features</a><a href="./#pro">Crumb Pro</a><a href="./#account">Your account</a><a href="privacy.html">Privacy</a></nav>
+    <a class="btn primary small" href="https://apps.microsoft.com/search?query=Crumb">Get Crumb</a>
+  </div>
+</header>
+
+<main class="doc">
+  <div class="narrow">
+    <h1>Privacy policy</h1>
+    <p class="date">Last updated: 30 October 2026</p>
+    <p>Crumb is a meeting notepad for Windows, built so that your meetings stay on your PC unless you choose otherwise. This policy explains what Crumb handles, where it goes, and the choices you have.</p>
+    <p class="summary"><b>In short:</b> You sign in with your Google or Microsoft account. Crumb has no analytics and no servers of its own. Audio never leaves your PC and is never saved. Your notes and transcripts are stored on your PC. They're copied to your own Google Drive or OneDrive only if you buy Crumb Pro, turn on sync and agree to it. Text is sent to Claude (Anthropic) only when you ask Crumb to write notes or answer a question, and only under your own account.</p>
+
+    <h2>What Crumb handles</h2>
+    <table>
+      <tr><th>Your account: name, email address and account ID</th><td>You sign in with Google or Microsoft. Crumb receives these from them and keeps them on your PC to know it's you.</td></tr>
+      <tr><th>Sign-in tokens</th><td>Stored on your PC, encrypted by Windows so only your Windows account can read them. Signing out deletes them.</td></tr>
+      <tr><th>Microphone and computer audio</th><td>Processed in memory while you transcribe, turned into text on your PC, then discarded. Audio is never written to disk and never sent anywhere.</td></tr>
+      <tr><th>Transcripts, your notes, AI notes, chat history</th><td>Stored in a database on your PC (in Crumb's app data folder). With cloud sync on, also copied to your Google Drive or OneDrive (see below).</td></tr>
+      <tr><th>Settings, categories, templates</th><td>Stored on your PC.</td></tr>
+      <tr><th>Outlook calendar link (optional)</th><td>Stored on your PC. Crumb uses it to download your calendar directly from Microsoft, to show upcoming meetings and name your notes.</td></tr>
+      <tr><th>Meeting participants' names (optional, Microsoft Teams)</th><td>While you transcribe a Teams call, Crumb reads who is speaking from the Teams window on your PC (participant names, and the highlight Teams draws around whoever is talking) to label the transcript. The window is only looked at in memory, never saved; the names are stored with that note.</td></tr>
+      <tr><th>Which apps are using your microphone</th><td>Checked on your PC, by reading Windows' own record, to offer "Take notes?" when a call starts. It's never stored or sent.</td></tr>
+      <tr><th>Crumb Pro purchase</th><td>Handled entirely by the Microsoft Store. Crumb only asks the Store whether you own Crumb Pro and what it costs where you are.</td></tr>
+    </table>
+
+    <h2>When data leaves your PC</h2>
+    <p>Crumb connects to services outside your PC only in these cases:</p>
+    <ul>
+      <li><b>Signing in.</b> Your browser signs you in at Google or Microsoft. Crumb then exchanges a one-time code with them for your name, email, account ID and sign-in tokens. Their own privacy policies cover the sign-in.</li>
+      <li><b>Cloud sync (Crumb Pro, off until you turn it on).</b> Crumb asks for your agreement first and records when you gave it. It then keeps a copy of each meeting in <i>your own</i> cloud storage, under your own account:
+        <ul>
+          <li><b>What's copied:</b> the transcript, your notes, AI notes and chat, plus the meeting's title, time, category and the names of people in it. Never audio.</li>
+          <li><b>Where it goes:</b> a "Crumb" folder in your Google Drive if you signed in with Google, or Crumb's app folder in your OneDrive (Apps › Crumb) if you signed in with Microsoft. Google or Microsoft stores it under your account and their terms.</li>
+          <li><b>What Crumb can see there:</b> only the files Crumb creates. Google's <code>drive.file</code> permission and OneDrive's app-folder permission don't let Crumb read the rest of your Drive or OneDrive.</li>
+          <li><b>Other PCs:</b> Crumb on your other PCs, signed in to the same account, reads these copies to show your meeting history there.</li>
+          <li><b>Who else can see them:</b> anyone who can get into your Google or Microsoft account, and anyone you share the folder with.</li>
+        </ul></li>
+      <li><b>AI notes and chat.</b> When you enhance notes or ask a question, Crumb sends the relevant transcript, your notes and the meeting's calendar details to Anthropic's Claude, under <i>your own</i> Claude account or API key (whichever you picked in Settings). That data is covered by <a href="https://www.anthropic.com/legal/privacy">Anthropic's privacy policy</a> and terms. Crumb doesn't add anything else.</li>
+      <li><b>Calendar.</b> Your PC downloads your published calendar from the link you provide.</li>
+      <li><b>Speech model.</b> If you pick a speech model that isn't built in, Crumb downloads it from Hugging Face. No personal data is sent.</li>
+      <li><b>Microsoft Store (Store version).</b> Crumb asks the Store a few times a day whether a newer version is available, and whether you own Crumb Pro. Purchases happen in the Store's own window, under Microsoft's terms; Crumb never sees your payment details.</li>
+    </ul>
+    <p>The developer of Crumb never receives your audio, transcripts, notes, calendar, cloud copies or sign-in details. There's no telemetry, advertising or tracking, and no data is sold or shared.</p>
+
+    <h2>Google user data</h2>
+    <p>Crumb's use of information received from Google APIs follows the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. Crumb uses your Google profile only to sign you in, and Google Drive only to store and read the meeting files Crumb creates for you. This data isn't transferred to anyone, isn't used for advertising, and isn't used to train AI models.</p>
+
+    <h2>Your choices</h2>
+    <ul>
+      <li><b>Microphone access</b> can be turned off at any time in <i>Windows Settings → Privacy &amp; security → Microphone</i>.</li>
+      <li><b>Delete</b> any note (with its transcript and chat) from the note's ••• menu. With sync on, its cloud copy is deleted too, and so is the note on your other PCs.</li>
+      <li><b>Turn off cloud sync</b> in <i>Settings → Account</i>. You can also ask Crumb to delete its cloud copies; they go to your Drive trash or OneDrive recycle bin, where they can be restored for a while.</li>
+      <li><b>Remove Crumb's access</b> to your account at any time. Google: <i>myaccount.google.com → Security → Third-party apps &amp; services</i>. Microsoft: <i>account.microsoft.com → Privacy → Apps and services</i>, or <i>myapplications.microsoft.com</i> for work and school accounts.</li>
+      <li><b>Sign out</b> in <i>Settings → Account</i>. Your notes stay on this PC.</li>
+      <li><b>Disconnect</b> the calendar by clearing the link in Settings, and turn off Teams speaker names there too.</li>
+      <li><b>Uninstalling</b> Crumb removes its app data folder from your PC. Copies in your Google Drive or OneDrive stay there until you delete them.</li>
+    </ul>
+
+    <h2>Recording others</h2>
+    <p>Laws in some places require everyone in a conversation to agree before it is recorded or transcribed. You're responsible for telling participants and getting any consent you need, including before you keep meetings in cloud storage. Crumb reminds you the first time you transcribe and when you turn on sync.</p>
+
+    <h2>Children</h2>
+    <p>Crumb isn't directed at children under 13 and doesn't knowingly collect their information.</p>
+
+    <h2>Changes and contact</h2>
+    <p>If this policy changes, the new version will be posted here with a new date. If a change affects cloud sync, Crumb asks you to agree again. Questions: <a href="mailto:support.crumb@gmail.com">support.crumb@gmail.com</a>.</p>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <a class="brand" href="./"><img src="img/logo.svg" alt="">Crumb</a>
+    <nav><a href="privacy.html">Privacy policy</a><a href="terms.html">Terms of service</a><a href="mailto:support.crumb@gmail.com">Support</a></nav>
+    <p class="legal">© 2026 Crumb, Inc.</p>
+  </div>
+</footer>
+</body>
+</html>
